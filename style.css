@@ -1,0 +1,55 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    gap : 20px ;
+
+}
+.card {
+    width: 350px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.card:hover {
+    z-index: 10;
+}
+.content-card {
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: all 0,15s ease-out;
+}
+.content-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.glow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    transition: all 0,15s ease-out;
+    border-radius: 30px;
+    mix-blend-mode: hard-light;
+    background : radial-gradient(circle at 50% 0%, rgb(184, 196, 211), transparent);
+}
