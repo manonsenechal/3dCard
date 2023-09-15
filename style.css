@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,8 +19,8 @@ body {
 
 }
 .card {
-    width: 350px;
-    height: 350px;
+    width: 900px;
+    height: 500px;
     perspective: 1000px;
 }
 
